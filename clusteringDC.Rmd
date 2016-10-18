@@ -1,0 +1,15 @@
+---
+title: "ClusteringDC"
+output: html_document
+--
+
+#Load the library
+
+Library(cluster)
+
+#Create a variable for the CSV data
+OT <- read.csv("online-tutor.csv")
+View(OT)
+
+#Create a new dataset OT2, that only has glasses and score column
+OT2 <- dplyr::select(OT,glasses,score)
